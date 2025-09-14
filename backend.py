@@ -177,32 +177,8 @@ graph.add_edge('chat_node', END)
 chatbot = graph.compile(checkpointer = checkpointer)
 
 
-# ====== This is not required here but I am test =======
-# config = {
-#     "configurable": {
-#         "thread_id": "1"
-#     }
-# }
 
-# for message_chunk , metadata in chatbot.stream(
-#     {'messages':[HumanMessage(content='What is the recipe to make pasta.')]},
-#     config=config,
-#     stream_mode = 'messages'
-# ):
 
-# # print(type(stream))
-#     if message_chunk.content:
-#         print(message_chunk.content, end=" ", flush=True)
-
-# ----------------------- DATABASE Testing ------------------------------------
-
-# CONFIG = {'configurable':{'thread_id':'thread-2'}}
-
-# response = chatbot.invoke(
-#     {'messages': [HumanMessage(content='What is my name.')]},
-#     config=CONFIG
-# )
-# print(response)
 
 def retrieve_all_threads():
     all_threads = set()
@@ -212,10 +188,3 @@ def retrieve_all_threads():
 
     return list(all_threads)
 
-# for message_chunk, metadata in chatbot.stream(
-#     ChatState(messages=[HumanMessage(content="What is the stock price of AAPL?")]),
-#     config={"configurable": {"thread_id": "test-thread"}},
-#     stream_mode="messages"
-# ):
-#     if message_chunk.content:
-#         print(message_chunk.content, end=" ", flush=True)
