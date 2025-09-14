@@ -1,13 +1,13 @@
-streamlit
-python-dotenv
-requests
+streamlit==1.49.1
+python-dotenv==1.0.1
+requests==2.32.3
 
-langgraph
-langchain
-langchain-core
-langchain-community
-langchain-experimental
-langchain-google-genai
-langchain-google-community
+langgraph==0.2.34
+langchain==0.3.7
+langchain-core==0.3.15
+langchain-community==0.3.7
+langchain-experimental==0.3.2
+langchain-google-genai==1.0.10
+langchain-google-community==2.0.2
 
-duckduckgo-search
+duckduckgo-search==6.2.4
